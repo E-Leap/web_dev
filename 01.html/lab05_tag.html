@@ -6,6 +6,113 @@
     <title>TAG-이미지, 리스트, 테이블</title>
 </head>
 <body>
+    <p><h1>imge downlod style</h1></p>
+    <td><img src="./img/angel-2915827_640.png"></td>
+    <td><img src="./img/angel-2410958_640.png"></td>
+    <hr>
+
+            <!-- width(가로), height(세로) -->
+            <p>이미지 조절하기 500*350</p>
+            <td><img src="https://cdn.pixabay.com/photo/2020/02/02/15/07/wine-4813260_960_720.jpg" width="500" height="350" alt="wine">
+            <td><img src="https://cdn.pixabay.com/photo/2015/10/24/11/09/red-wine-1004255_960_720.jpg" width="500" height="350" alt="wine"><hr>
     
+
+    <!-- 이미지 저장, 추가. 경로추가는 "./img/" 더욱 더 상위에 있는 폴더일수록 . . 추가-->
+    <p><h1>이미지저장방법 3가지 </h1></p>
+    <!-- 상대경로 : (./)폴더 또는 파일명을 입력하면 됩나다. -->
+    <p>상대경로-이미지저장</p>
+    <td><img src="./img/angel-2410958_640.png" alt="it is angel">
+
+    <!-- 상위 폴더에 있는 이미지 찾기 -->
+    <P>상위폴더경로-이미지저장</P>
+    <img src="/01.html/angel-2909616_640.png">
+ 
+    <!-- 절대경로 : 파일의 하드디스크 또는 서바 상의 위치를 표시, 이 폴더 구조 뿐만아니라 html, http로 시작하는 url 넣을 수 있음. -->
+    <p>절대경로-웹주소이미지</p>
+    <td><img src="https://cdn.pixabay.com/photo/2020/02/02/15/07/wine-4813260_960_720.jpg"><hr>
+
+        <!-- 루트경로 -->
+        <img src="~.jpg" alt="대체로 설명하는 텍스트(이미지 없을 경우)"><hr>
+        <!-- alt : 이미지에 대한 대체 설명 -->
+<br>
+<br>
+<br>
+<h2>리스트</h2>
+<h3>순서 없는 리스트(ul:unordered list)</h3>
+<!-- 순서가 없는 리스트 : ul(unordered list) -->
+
+<ul>
+    <li>오감자</li>
+    <li>에이스</li>
+    <li>코크</li>
+</ul>
+<br>
+<br>
+<br>
+
+<h3>순서 있는 리스트(ol:drdered list)</h3>
+<ol>
+    <li>충무로역 하차</li>
+    <li>잠바 정리</li>
+    <li>발열 검사</li>
+    <li>수업 준비</li>
+    <li>수업</li>
+    <li>점심식사</li>
+    <li>귀가</li>
+</ol>
+<br>
+<br>
+<br>
+
+<h3>정의 리스트</h3>
+<dl>
+    <dt><strong>웹(WEP)</strong></dt>
+    <dd>명사 정보·통신 무선 랜의 프라이버시 보안을 유선 랜의 보안 수준으로 향상한 보안 통신 규약. 유선 랜은 일반적으로 건물 접근 통제와 같은 물리적 보안 체계로 되어 있지만, 무선 랜에서는 전파의 공간 전달 특성으로 인하여 별 효과가 없기 때문에 유선망의 보안도에 맞추어 유사한 보안 대책으로 데이터를 암호화한다. 데이터 암호화는 노출되기 쉬운 회선 접속을 보호하고, 비밀 번호, 단말 간 암호, 가상 사설 통신망, 인증 등 전형적인 랜 보안 체계로 프라이버시를 보호한다. ⇒규범 표기는 미확정이다..</dd><br>
+    <dt><strong>프로그래밍(programming)</strong></dt>
+    <dd>컴퓨터 컴퓨터 프로그램을 작성하는 일. 일반적으로는 프로그램 작성 방법의 결정, 코딩(coding), 에러 수정 따위의 작업을 이르지만 특수하게 코딩만을 이를 때도 있다.</dd>
+
+</dl>
+
+
+<br>
+<br>
+<br>
+<h3>중첩 리스트</h3>
+<li>어제 먹은 음식리스트
+    <ul>
+        <li>더블치즈피자&페퍼로니피자</li>
+        <li>강서맥주</li>
+        <li>떡볶이</li>
+<li>먹는순서
+    <ol type="I">
+        <li>맥주 한입으로 목을 축인다</li>
+        <li>피자 한입, 떡볶이 한입</li>
+        <li>피자를 떡볶이국물에 말아먹는다.</li>
+    </ol>
+    <li>여름에는 바다로
+    <li>가을에는 산으로
+</ul>
+</li>
+
+
+
+<hr>
+<h2>All about Sunny</h2>
+<table>
+        <caption>Mt.Geomgang</caption>
+        <thead><tr>
+            <td>TEST1행<br>TEST2행<br>TEST3행<br>TEST4행<br>
+            </td>
+            <th>금강산은 강원도의 북부에 있는 명산으로 기암괴석이 많고, 곳곳에 폭포와 못이 있어 경치가 매우 아름답다. <br> 현재는 北의 토지에 있으며, 북 측의 국경 패쇄로 인해 금강산 방문 및 등산이 금지 되었음.<br> Sunny의 소중이가 다리 사이로 패쇄되어 쉽게 보지 못한다는 게 금강산과 흡사하다하여 '금강산'이라고 지었으며, <br> 금강산 주인인 Sunney는 금강산을 'Mt.Geomgang'이라고 명명하고 암호코트로 사용하고 있다.</th>
+            </tr>
+                    </thead>
+</table>
+
+
+
+
+</tfoot>
+</html>
 </body>
 </html>
+</thead>  
