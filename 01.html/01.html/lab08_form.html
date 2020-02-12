@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹 폼(p.125)</title>
+</head>
+<body>
+    <h1>2020.02.12 폼만들기</h1>
+<hr>
+    <h1>1.로그인 폼</h1>
+    <!-- (주석) 폼(fome): 사용자의 입력을 받는 태그 -->
+    <form action="">
+        I D : <input type="text"><br>
+        PW : <input type="password"><br>
+        <br>
+        <input type="submit"><br>
+    </form>
+<hr>
+    <br>
+    <h1>2.검색 폼</h1>
+    <h2>가.naver</h2>
+    <!-- get : 입력받은 데이터를 주소창을 통해 전달 -->
+    <form action="https://search.naver.com/search.naver" method="get">
+    <input type="next" name="query"><br>
+    <input type="submit" value="검색"><br>
+    </form>
+<br>
+    <!--  https://wwww.google.com/search -->
+    <h2>나.google 검색결과는 새창으로 뜨기</h2>
+    <form action="https://www.google.com/search" method="get" target="blank">
+    <input type="next" name="query"><br>
+    <input type="submit" value="검색"><br>
+    </form>
+<br>
+    <!--  https://wwww.google.com/search -->
+    <h2>다.youtub 검색결과는 새창으로 뜨기</h2>
+    <form action="https://www.youtube.com/watch" method="get" target="blank">
+    <input type="next" name="query"><br>
+    <input type="submit" value="유투브 검색"><br> 
+    </form>
+<hr>
+    <h1>3.input 태그</h1>
+    <h2> 가.텍스트 입력</h2>
+    -input size(10) <input type="text" name="test" placeholder="이름을 입력해주세요." size="10"><br>
+    -input size(20) <input type="text" name="test" placeholder="이름을 입력해주세요." size="20"><br>
+    -input size(30) <input type="text" name="test" placeholder="이름을 입력해주세요." size="30"><br>
+    -input size(30) & maxlength <input type="text" name="test" placeholder="이름을 입력해주세요." size="30" maxlength="10"><br>
+    -input size(30) & maxlengt & minlength <input type="text" name="test" placeholder="이름을 입력해주세요." size="30" maxlength="10" minlength="5"><br>
+    -textarea<br>
+    <textarea clos="30" rows="10" placeholder="이름을 입력해주세요.">
+    텍스트에리어
+    </textarea>
+    <br>
+
+    <h2> 나.폼선택</h2>
+    나라이름 : <input type="text" list="country">
+    <datalist id="country">
+        <option value="한국">
+        <option value="미국">
+        <option value="일본">
+        <option value="중국">
+    </datalist>
+    <hr>
+    <h1>4.버튼</h1>
+    <h2>가.텍스트버튼<h2>
+    <input type="button" value="새버튼" onclick="alert('버튼을 누르셨네요!')">
+
+    <button type="button" value="새버튼2"></button>
+    
+    <button type="button">
+    <form action="">
+    <input type="text">
+    <input type="submit" value="제출">
+    <input type="reset" value="초기화">
+    <input type="reset" value="초기화2">
+    <button type="submit" value="제출2">
+</button>
+<br>
+<br>
+<h2>나.이미지버튼</h2>
+    <!-- https://image.flaticon.com/icons/svg/2485/2485919.svg -->
+    <input type="image" src="https://image.flaticon.com/icons/svg/2485/2485919.svg" width="50" height="50">
+    <button type="buttom"><img src="https://image.flaticon.com/icons/svg/2485/2485919.svg" alt="" width="50" height="50">
+    </button>
+
+    <br>
+    <br>
+
+    <h2>다.년월일형 버튼</h2>
+    <input type="date">
+    <h2>라.선택형 입력</h2>
+    <!-- 목록을 보여주고 그 중에 사용자가 선택하게 하는 것 -->
+    <h3>1)체크박스</h3>
+    <form action=""></form>
+        <input type="checkbox" name="value" value="t">락 
+        <input type="checkbox" name="ballad" value="t">발라드
+        <input type="checkbox" name="age" value="t">에이지 
+        <input type="checkbox" name="dance" value="t">댄스
+        <input type="checkbox" name="jazz" value="t" checked>재즈 
+        <input type="submit">
+    </form>
+    <br>
+    <br>
+<H3>3)라디오버튼</H3>
+<form action="">
+    <input type="radio" name="fastfood" value="1">롯데리아
+    <input type="radio" name="fastfood" value="2">맥도날드
+    <input type="radio" name="fastfood" value="3">K.F.C
+    <input type="radio" name="fastfood" value="4">버커킹
+    <input type="submit">
+</form>
+
+<h3>4)콤보박스</h3>
+<form action="">
+    <select name="food" id="">
+    <option value="1">김치찌개</option>
+    <option value="2" selected>된장찌개</option>
+    <option value="3">순두부찌개</option> 
+    <input type="submit">
+    </select>
+</form>
+
+<!-- selected 는 이미 선택되어 있다라는 뜻 -->
+<br>
+<br>
+<br>
+    <h3>5)lavel</h3>
+<label>ID : <input type="text"></label>
+<label for="">PW </label> <input type="password" name="password" name="" id="">
+
+<br>
+<br>
+    <h3>6)Fieldset</h3>
+    <form action="">
+        <fieldset>
+           <legend>자기소개</legend>
+           <label>이름 : <input type="text" name="name"></label> 
+           <label>성별 : <input type="radio" name="gender" value="m" id="">남성</label><input type="radio" name="gender" value="w" id="">여성</label>
+        </fieldset>
+    </form>
+
+    <fieldset>
+        <legend>좋아하는 음식</legend>
+        <select name="food" id="">
+            <option value="1">새우</option>
+            <option value="2">연어</option>
+            <option value="3">참치</option>
+        </select>
+        <input type="submit">
+    </fieldset>
+
+
+</body>
+</html>
