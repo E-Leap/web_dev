@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>네이버서비스</title>
+</head>
+<body>
+    <!-- 로그인 창 -->
+    <h1>로그인</h1>
+    <!-- 실제 연결할 필요없음(action 속성x) -->
+        <form>
+            <fieldset>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRXgtJVcEnIDQqxyRWoebMWyRNpZLq4w7c4NWVHE67A63FU5tHi" alt="네이버 로고" width="160px"><br>
+                <!-- 대표 제목을 적어주는 태그 -->
+               <legend>로그인</legend>
+               <!-- 캡션과 input 태그를 묶어주는 태그 -->
+               <label>
+                   <!-- 일반적인 텍스트를 입력하는 태그 -->
+               ID : <input type="text" name="ID"><br>
+            </label>
+            <label>   
+            PW : <input type="password" name=PW><br>
+            </label><BR>
+                <!-- 폼 안의 값을 초기화하는 태그 -->
+               <input type="reset">
+               <!-- 폼의 데이터를 서버로 보내는 태그 -->
+               <input type="submit"><br>
+            </fieldset>
+        </form>
+
+
+    <!-- 네이버 쇼핑창 -->
+    <h1>네이버 쇼핑</h1>
+
+ 
+    검색:
+        <form action="https://search.shopping.naver.com/search/all.nhn" name="shopping"> 
+    <!-- 일반적인 텍스트를 입력하는 태그 / 입력할 내용을 가이드해주는 속성 / required : 필수속성(not null, 입력해야만 진행가능한 폼) -->
+            <input type="text" name="query" placeholder="검색어를 입력해주세요." required><br>
+            <!--  폼 요소(input tag)들을 묶어주는 태그 -->
+
+    <!-- 체크박스 -->
+        <fieldset>
+            <legend>배송/혜택</legend>
+            <input type="checkbox" name="delivery" value="1">무료배송
+            <input type="checkbox" name="card_discount" value="true">카드할인
+            <input type="checkbox" name="coupon" value="true">쿠폰
+        </fieldset>
+
+    <!-- 라디오버튼&콤보박스 -->
+    <form action="">
+            <fieldset>
+                <legend>카테고리</legend>
+                <input type="radio" name="productSet" value="" checked>전체
+                <input type="radio" name="productSet" value="model">가격비교
+                <input type="radio" name="productSet" value="checkout">네이버페이
+                <input type="radio" name="productSet" value="department">백화점/홈쇼핑
+                <br>
+                <select name="sort">
+                    <!-- 콤보박스의 선택항목들 나타내는 태그  -->
+                    <!-- s로 시작하는 기본 선택 속성 -->
+                    <!-- 콤보박스에는 셀렉트가 꼭.-->
+                <option type="list&sort" value="rel" selected>네이버 쇼핑 랭킹순</option>
+                <option type="price_asc" value="price_asc">낮은 가격순</option>
+                <option value="price_dsc">높은 가격순</option>
+            </select>
+            </fieldset>
+            <input type="reset">
+            <input type="submit">
+            <br>
+            
+
+
+
+ 
+
+    </form>
+
+
+
+
+</body>
+</html>
