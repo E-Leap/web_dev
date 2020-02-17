@@ -16,21 +16,40 @@
         /* Margin */
         p.individual {
             /* 배경색의 영향 받지 않음 */
+            margin: 10px;
+            margin-top: 10px;
+            margin-right: 20px;
+            margin-bottom: 40px;
+            margin-left: 80px;
         }
 
         p.shorthand {
+            margin: 80px 40px 20px 10px;
+            margin: 80px 40px 20px;
+            margin: 80px 40px;
+            margin: 80px;
             /* 적용 방식은 border와 동일 */
         }
 
         p.auto {
             /* margin: auto : 좌-우를 동일하게 주겠다는 의미 (위 아래는 적용 X) */
+            width: 50%;
+            margin: auto;
         }
 
         /* Padding */
-        div.individual {}
+        div.individual {
+            /* padding: 40px; */
+            padding-top: 10px;
+            padding-right: 20px;
+            padding-bottom: 40px;
+            padding-left: 80px;
+        }
+
 
         div.shorthand {
             /* 적용 방식은 border와 동일 */
+            padding: 80px 40px 20px 10px;
         }
 
         /* Border-box */
