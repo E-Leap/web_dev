@@ -5,7 +5,9 @@
  <!-- 상단바 꾸미기 : 네비게이션(메뉴), 링크, 검색바 사용-->
  <nav class="navbar navbar-expand-md navbar-light bg-white mb-4 fixed-top">
     <a class="navbar-brand" href="#">
-        <img src="https://cdn.pixabay.com/photo/2013/07/12/19/21/bong-154631_960_720.png" width="150px" alt="star"> <h6><b>All about a Bong</h6></b>
+        <img src="https://cdn.pixabay.com/photo/2013/07/12/19/21/bong-154631_960_720.png" width="150px" alt="star"> <h6><b> 
+            <!-- 메인 이미지의 폰트 속성과 색상을 꾸밈  -->
+            <span style="font: italic bold 1.5em/1em georgia, serif; color: green"> <h6><b>Bongs and children</h6></b></span></h6></b>
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
         aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -13,7 +15,7 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
+            <li class="nav-item">
                 <a class="nav-link" href="junseock.html"><h5>봉준호 소개<sub>[신준석]</sub></h5></a>
             </li>
             <li class="nav-item">
@@ -24,7 +26,7 @@
             </li>
         </ul>
 
-        <!-- 검색링크 달아주기 검색연결사이트:www.google.com -->
+        <!-- 검색링크 ex) 봉준호에 궁금하신 사항등 있을 우려에 검색연결사이트:www.naver.com -->
         <form action="https://search.naver.com/search.naver?=" class="form-inline mt-2 mt-md-0" target="_blank">
             <input class="form-control mr-sm-2" type="text" placeholder="검색하기" aria-label="Search">
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">SEARCH</button>
@@ -51,11 +53,14 @@ integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9If
 </head>
 <body>
     <br><br><br><br><br>
-     <div id="top">
-        <a href="#info">인적사항</a>
-        <a href="#education">학력</a>
-        <a href="#career">경력</a>
-        <a href="#works">주요작품</a>
+    <!-- 태그를 이용한 앵커 -->
+    <div id="top">
+        <ul>
+        <li><a href="#info">인적사항</a></li>
+        <li><a href="#education">학력</a></li>
+        <li><a href="#career">경력</a></li>
+        <li><a href="#works">주요작품</a></li>
+    </ul>
     </div>
 
      <!-- 메뉴바를 이용한 감독 소개 링크를 하고 싶었으나.. 잘되질않았습니다.. -->
@@ -81,9 +86,8 @@ integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9If
             color: #333;
             transition: all 0.3s ease-in-out;
         }
-</style>
-
-
+        </style>
+    <!-- 가운데 정렬-->
     <div style="max-width: 1000px; margin: 0 auto;">
         <h1>감독 소개</h1>
         <hr>
@@ -94,12 +98,21 @@ integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9If
             <b>성별</b> : 남성<br>
             <b>생년월일</b> : 1969년 09월 14일<br>
             <b>출생지</b> : 대구직할시 남구 봉덕동<br>
-            <b>직업</b> : 각본가,감독<br>
+            <b>종교</b> : 천주교<br>
+            <b>부모</b> : 父=봉상균 , 母=박소영<br>
+            <b>형제자매</b> : 2남 2녀중 막내 형=봉준수, 누나=봉지희<br>
+            <b>배우자</b> : 정선영<br>
+            <b>자녀</b> : 子= 봉효민<br>
         </p>
         <hr>
         <h2 id="education">학력</h2>
         <ul>
             <li><ins>대구남도초등학교(전학)</ins></li>
+            <select name="sort">
+                <!-- 콤보박스의 선택 항목을 이용해 재밌게 ..해보려고 했습니다 -->
+                <option value="rel" selected>click!!!!!!!!!</option>
+                <option value="price_asc">서울로 전학을 가고 그의 인생이 달라졌다</option>
+            </select>
             <li><ins>잠실고등학교(졸업)</ins></li>
             <li><ins>연세대학교 사회학(학사)</ins></li>
             <li><ins>한국영화아카데미</ins></li>
@@ -318,11 +331,13 @@ integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9If
 </main>
 <footer class="footer">
     <div class="container-fluid mt-3 p-3 text-center bg-secondary text-white">(주)봉쓰와 아이들
-        <dl>
-            <dt>신준석</dt>
-            <dt>주상현</dt>
-            <dt>황진옥</dt>
-        </dl></div>
+        <!-- 보기좋게 나열 -->
+        <ul>
+            <li><th>신준석</th></li>
+            <li><th>주상현</th></li>
+            <li><th>황진옥</th></li>
+        </ul>
+    </div>
     
 </footer>
 <!-- Optional JavaScript -->
